@@ -18,7 +18,7 @@ function wrk(opts, callback) {
   if (opts.rate)
     cmd += ' -R' + opts.rate;
   if (opts.printLatency)
-    cmd += ' --latency ';
+    cmd += ' --latency';
   if (opts.headers) {
     Object.keys(opts.headers).forEach(function(key) {
       cmd += util.format(' -H  \'%s: %s\'', key,  opts.headers[key]);
